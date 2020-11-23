@@ -1,0 +1,13 @@
+{
+    "name": "marinusklasen/cloudways-management-tool",
+    "require": {
+        "vlucas/phpdotenv": "^5.2",
+        "cloudwaysapi/phpsdk": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Marinus Klasen",
+            "email": "marinus@mklasen.nl"
+        }
+    ]
+}
