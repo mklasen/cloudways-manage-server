@@ -8,8 +8,8 @@ foreach ( $servers as $server ) {
 		$object = reset( $server );
 		if ( isset( $_SERVER['USER'] ) && $object->label === $_SERVER['USER'] ) {
 			$get_services = $service->getServices( $object->id );
-			$services     = reset( $get_services->services );
-			foreach ( $services as $key => $service ) {
+			$running_services     = reset( $get_services->services );
+			foreach ( $running_services as $key => $running_service ) {
 				if ( strpos( $key, '-fpm' ) !== false ) {
 					$service->manageServices( $object->id, $key, 'restart' );
 				}
