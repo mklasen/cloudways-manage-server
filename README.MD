@@ -20,7 +20,7 @@ task (
 	'deploy:restart_php-fpm',
 	function() {
 		writeln( ' - Restart PHP-FPM' );
-		run( 'php ~/tools/cloudways-manage-server/restart-php-fpm.php' );
+		run( '[ -f ~/tools/cloudways-manage-server/restart-php-fpm.php ] && php ~/tools/cloudways-manage-server/restart-php-fpm.php' );
 	}
 );
 ```
